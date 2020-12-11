@@ -56,7 +56,7 @@
           "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.dll": {}
         }
       },
-      "MediatR/7.0.0": {
+      "MediatR/9.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/MediatR.dll": {}
@@ -2385,6 +2385,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "DDD.Base.Template.Infra.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "FluentValidation": "8.6.3",
+          "MediatR": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DDD.Base.Template.Infra.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDD.Base.Template.Infra.CrossCutting.dll": {}
+        }
       }
     }
   },
@@ -2459,16 +2473,21 @@
         "lib/netstandard2.0/IdentityServer4.AccessTokenValidation.xml"
       ]
     },
-    "MediatR/7.0.0": {
-      "sha512": "sgfHxkBsmMlHOD564SnLqTvSbAuGlFiZfc6ybxBSI1wYV/2u+Y5TXtFoIhCISFg5/s/6aMvB338QC2JseHsjTA==",
+    "MediatR/9.0.0": {
+      "sha512": "8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
       "type": "package",
-      "path": "mediatr/7.0.0",
+      "path": "mediatr/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "gradient_128x128.png",
         "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
         "lib/netstandard2.0/MediatR.dll",
-        "mediatr.7.0.0.nupkg.sha512",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.9.0.0.nupkg.sha512",
         "mediatr.nuspec"
       ]
     },
@@ -7731,10 +7750,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "DDD.Base.Template.Infra.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../DDD.Base.Template.Infra.CrossCutting/DDD.Base.Template.Infra.CrossCutting.csproj",
+      "msbuildProject": "../DDD.Base.Template.Infra.CrossCutting/DDD.Base.Template.Infra.CrossCutting.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "DDD.Base.Template.Infra.CrossCutting >= 1.0.0",
       "FluentValidation >= 8.6.3",
       "IdentityServer4.AccessTokenValidation >= 2.7.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 7.0.0",
@@ -7767,7 +7792,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Tiago Danielce\\Desktop\\labs\\DDD.Base.Template\\src\\DDD.Base.Template.Infra.CrossCutting\\DDD.Base.Template.Infra.CrossCutting.csproj": {
+              "projectPath": "C:\\Users\\Tiago Danielce\\Desktop\\labs\\DDD.Base.Template\\src\\DDD.Base.Template.Infra.CrossCutting\\DDD.Base.Template.Infra.CrossCutting.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

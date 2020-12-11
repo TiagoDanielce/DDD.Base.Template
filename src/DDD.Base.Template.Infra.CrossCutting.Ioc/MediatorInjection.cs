@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using DDD.Base.Template.Infra.CrossCutting.Extensions.Mediator.PipelineBehavior;
+using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;

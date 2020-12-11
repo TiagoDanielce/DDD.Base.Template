@@ -15,4 +15,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DDD.Base.Template.Infra.CrossCutting\DDD.Base.Template.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
 </Project>
