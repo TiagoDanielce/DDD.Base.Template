@@ -15,7 +15,43 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - CrossCutting", "3.2 -
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.3 - ExternalServices", "3.3 - ExternalServices", "{AA4265C8-E5FB-42EE-BA97-2684AE9CED3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Base.Template.Domain", "src\DDD.Base.Template.Domain\DDD.Base.Template.Domain.csproj", "{94D98B13-C2C7-4A36-926B-8F80F66DDFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Base.Template.Api", "src\DDD.Base.Template.Api\DDD.Base.Template.Api.csproj", "{4E614A0D-4AF4-4150-8418-8B6FE0E37469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Base.Template.Infra.Data", "src\DDD.Base.Template.Infra.Data\DDD.Base.Template.Infra.Data.csproj", "{F2F087C1-EA90-4446-83AB-876DF669E413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Base.Template.Infra.CrossCutting", "src\DDD.Base.Template.Infra.CrossCutting\DDD.Base.Template.Infra.CrossCutting.csproj", "{8031E594-DAE1-4318-AB8E-6B87353B69E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Base.Template.Infra.CrossCutting.Ioc", "src\DDD.Base.Template.Infra.CrossCutting.Ioc\DDD.Base.Template.Infra.CrossCutting.Ioc.csproj", "{21C13044-A50E-4355-8FBB-6461BCE8C0CC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94D98B13-C2C7-4A36-926B-8F80F66DDFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D98B13-C2C7-4A36-926B-8F80F66DDFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D98B13-C2C7-4A36-926B-8F80F66DDFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D98B13-C2C7-4A36-926B-8F80F66DDFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E614A0D-4AF4-4150-8418-8B6FE0E37469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E614A0D-4AF4-4150-8418-8B6FE0E37469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E614A0D-4AF4-4150-8418-8B6FE0E37469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E614A0D-4AF4-4150-8418-8B6FE0E37469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F087C1-EA90-4446-83AB-876DF669E413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F087C1-EA90-4446-83AB-876DF669E413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F087C1-EA90-4446-83AB-876DF669E413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F087C1-EA90-4446-83AB-876DF669E413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8031E594-DAE1-4318-AB8E-6B87353B69E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8031E594-DAE1-4318-AB8E-6B87353B69E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8031E594-DAE1-4318-AB8E-6B87353B69E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8031E594-DAE1-4318-AB8E-6B87353B69E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C13044-A50E-4355-8FBB-6461BCE8C0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C13044-A50E-4355-8FBB-6461BCE8C0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C13044-A50E-4355-8FBB-6461BCE8C0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C13044-A50E-4355-8FBB-6461BCE8C0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -23,6 +59,11 @@ Global
 		{6938A0C1-0181-492A-B078-F4A68E58D8FE} = {7F191B40-5536-40A5-B0F8-1A719AC5FE37}
 		{C064369D-022F-4F98-A911-47473A8494ED} = {7F191B40-5536-40A5-B0F8-1A719AC5FE37}
 		{AA4265C8-E5FB-42EE-BA97-2684AE9CED3B} = {7F191B40-5536-40A5-B0F8-1A719AC5FE37}
+		{94D98B13-C2C7-4A36-926B-8F80F66DDFE5} = {ADFE1E0E-BBA3-48AE-B475-BDA988DDE639}
+		{4E614A0D-4AF4-4150-8418-8B6FE0E37469} = {C0BDC3C1-FD4A-4CAB-AEBB-36FC95210203}
+		{F2F087C1-EA90-4446-83AB-876DF669E413} = {6938A0C1-0181-492A-B078-F4A68E58D8FE}
+		{8031E594-DAE1-4318-AB8E-6B87353B69E4} = {C064369D-022F-4F98-A911-47473A8494ED}
+		{21C13044-A50E-4355-8FBB-6461BCE8C0CC} = {C064369D-022F-4F98-A911-47473A8494ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0C9242A-EF50-413B-AAB4-94B27C6FE451}
